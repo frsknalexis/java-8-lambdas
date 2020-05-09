@@ -18,6 +18,10 @@ public class Student {
 	public Student() {
 		
 	}
+	
+	public Student(String name) {
+		this.name = name;
+	}
 
 	public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities) {
 		super();
@@ -66,6 +70,10 @@ public class Student {
 
 	public void setActivities(List<String> activities) {
 		this.activities = activities;
+	}
+	
+	public void printListOfActivities() {
+		System.out.println(this.activities);
 	}
 
 	@Override
